@@ -5,8 +5,8 @@ class House:
 
     def go_to(self, new_floor):
         floor = 1
-        new_floor = int()
-        if new_floor >= 1 or new_floor <= self.number_of_floors:
+        new_floor = int(new_floor)
+        if new_floor >= 1 and new_floor <= self.number_of_floors:
             while floor <= new_floor:
                 print(floor)
                 floor += 1
