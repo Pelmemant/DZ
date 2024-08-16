@@ -6,9 +6,9 @@ class Animal:
 
 
 class Plant:
-    def __init__(self, name, edible = False):
+    def __init__(self, name):
         self.name = name
-        self.edible = False
+    edible = False
 
 
 class Mammal(Animal):
