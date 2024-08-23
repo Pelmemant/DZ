@@ -17,8 +17,10 @@ class Shop:
         self.__file_name = 'products.txt'
 
     def get_products(self):
-        with open(self.__file_name, 'r') as file:
-            return file.read()
+        file = open(self.__file_name, 'r')
+        data = file.read()
+        print(data)
+        file.close()
 
     def add(self, *products):
         existing_products = set()
