@@ -30,6 +30,7 @@ class Bank(threading.Thread):
                 else:
                     print('Запрос отклонён, недостаточно средств')
                     self.lock.acquire()
+                 sleep(0.001)
 
 
 bk = Bank()
