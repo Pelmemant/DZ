@@ -13,7 +13,7 @@ print(result)
 
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
-        with contextlib.redirect_stdout(open(file_name, 'a')) as f:
+        with contextlib.redirect_stdout(open(file_name, 'a', encoding='utf-8')) as f:
             for data in data_set:
                 f.write(str(data) + '\n')
 
