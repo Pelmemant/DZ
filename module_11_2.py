@@ -15,11 +15,19 @@ class Mage:
 def introspection_info(obj):
     info = {}
     info['type'] = type(obj).__name__
-    info['attributes'] = dir(obj)
-    info['methods'] = [method for method in dir(obj) if callable(getattr(obj, method))]
     module = obj.__module__
+    attributes = []
+    methods = []
+    for attr in dir(obj):
+        if callable(getattr(obj, attr)):
+            methods.append(attr)
+        else:
+            attributes.append(attr)
     if hasattr(obj, '__module__'):
         info['module'] = module
+        info['attributes'] = attributes
+        info['methods'] = methods
+
     return info
 
 
