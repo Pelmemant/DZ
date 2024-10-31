@@ -1,0 +1,16 @@
+2024-10-31 21:15:44,541 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\gigig\PycharmProjects\pythonProject1\Модуль 12\tests_12_4.py", line 28, in test_run
+    raise TypeError("Имя должно быть строкой")
+TypeError: Имя должно быть строкой
+2024-10-31 21:15:44,549 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\gigig\PycharmProjects\pythonProject1\Модуль 12\tests_12_4.py", line 20, in test_walk
+    self.assertEqual(self.runner1.distance, 50)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.4\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\gigig\AppData\Local\Programs\Python\Python39\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\gigig\AppData\Local\Programs\Python\Python39\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: -50 != 50
