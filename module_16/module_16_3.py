@@ -6,7 +6,7 @@ app = FastAPI()
 
 users = {'1': 'Имя: Example, возраст: 18'}
 
-@app.get("/")
+@app.get("/users")
 async def u_get() -> dict:
     return users
 
