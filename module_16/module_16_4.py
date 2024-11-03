@@ -12,7 +12,7 @@ class User(BaseModel):
     age: int
 
 
-@app.get("/")
+@app.get("/users")
 async def u_get() -> List[User]:
     return users
 
