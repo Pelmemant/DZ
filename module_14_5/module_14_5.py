@@ -10,7 +10,7 @@ from aiogram.types import FSInputFile
 from crud_functions import get_all_products, is_included, add_user, off_shout
 
 
-api = '7706256202:AAEVx4cyEY9PFDv-EB9yzLuPEdkbA62Y-BI'
+api = ''
 bot = aiogram.Bot(token=api)
 dp = aiogram.Dispatcher(storage=MemoryStorage())
 
